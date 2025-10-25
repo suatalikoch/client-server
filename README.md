@@ -89,6 +89,20 @@ This project demonstrates how to implement a fully functional client-server syst
 └── package.json                      # Packages
 ```
 
+### Native JavaScript Functions:
+- `document.querySelector()` and `document.getElementById()` – DOM manipulation  
+- `addEventListener()` – form submission and event handling  
+- `RegExp` and `.test()` – input validation (email, password)  
+- `fetch()` or `XMLHttpRequest()` – communication between client and server  
+- `JSON.stringify()` and `JSON.parse()` – data exchange  
+- `Math.random()` and string operations – CAPTCHA generation  
+- `setTimeout()` / `setInterval()` – timing and UI updates  
+- `console.log()` – debugging  
+
+### External Tool:
+- **`bcrypt`** – used for secure password hashing and comparison during login.  
+  It ensures all passwords are safely stored and never saved in plain text.
+
 ## How to Run
 
 1. Clone the repository:
