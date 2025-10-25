@@ -53,22 +53,41 @@ This project demonstrates how to implement a fully functional client-server syst
   Every function is covered, including validation, database interactions, and authentication.
 
 ## Project Structure
-/project-root
-│
-├── index.html # Login page
-├── register.html # Registration page
-├── global.css # Global styles and themes
-├── js/
-│ ├── validation.js # Form validation logic
-│ ├── theme.js # Theme toggling
-│
-├── backend/ # Backend code for handling requests
-│ ├── database.js # DB connection and queries
-│ ├── auth.js # Login, logout, session management
-│ ├── register.js # Registration logic including CAPTCHA
-│
-└── tests/ # Unit tests for backend functions
 
+```bash
+/client-server
+│
+├── /public
+│   ├── /js
+│   │   ├── captcha.js                # CAPTCHA logic for registration
+│   │   ├── profile.js                # Frontend profile page logic
+│   │   ├── validation-functions.js   # Validation helper functions
+│   │   ├── validation-login.js       # Login form validation logic
+│   │
+│   ├── /style
+│   │   └── global.css                # Styling
+│   │
+│   ├── index.html                    # Login page
+│   ├── profile.html                  # Profile page
+│   └── register.html                 # Register page
+│
+├── /server
+│   ├── authentication.js             # Login, logout, session management
+│   ├── cookies.js                    # Cookies & Sessions
+│   ├── database.js                   # Database communication
+│   ├── profile.js                    # Backend logic for profile
+│   └── server.js                     # Entry point of application
+│
+├── /tests
+│   ├── authentication.test.js        # Unit tests for authentication
+│   ├── captcha.test.js               # Unit tests for CAPTCHA
+│   ├── cookies.test.js               # Unit tests for cookies
+│   ├── database.test.js              # Unit test for database
+│   └── profile.test.js               # Unit test for profile
+│
+├── README.md                         # Documentation
+└── package.json                      # Packages
+```
 
 ## How to Run
 
@@ -84,14 +103,20 @@ cd <project-folder>
 
 ```bash
 # Example for Node.js
-node backend/server.js
+npm run dev
+```
+
+or
+
+```bash
+npm start
 ```
 
 4. Open index.html in your browser to access the login page.
 5. Run unit tests:
 
 ```bash
-# Example for Node.js using Jest
+# Example for Node.js using npm
 npm test
 ```
 
