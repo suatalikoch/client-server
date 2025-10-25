@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company | Profile</title>
+    <link rel="stylesheet" href="./style/global.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="wrapper">
+        <div class="information">
+          <h5>Update Profile</h5>
+          <p>Change your name or password below.</p>
+        </div>
+        <form id="profileForm" class="form" novalidate>
+          <fieldset class="input-group">
+            <label for="email" class="input-label">Email</label>
+            <input id="email" name="email" placeholder="Enter new email" />
+            <small class="error-message" id="emailError"></small>
+          </fieldset>
+          <fieldset class="input-group">
+            <label for="first-name" class="input-label">First Name</label>
+            <input
+              id="first-name"
+              name="firstName"
+              placeholder="Enter new first name"
+            />
+            <small class="error-message" id="firstNameError"></small>
+          </fieldset>
+          <fieldset class="input-group">
+            <label for="last-name" class="input-label">Last Name</label>
+            <input
+              id="last-name"
+              name="lastName"
+              placeholder="Enter new last name"
+            />
+            <small class="error-message" id="lastNameError"></small>
+          </fieldset>
+          <fieldset class="input-group">
+            <label for="password" class="input-label">New Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter new password"
+            />
+            <small class="error-message" id="passwordError"></small>
+          </fieldset>
+          <div class="btn-group">
+            <button type="submit">Update Profile</button>
+            <button type="button" id="logoutBtn">Logout</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="./js/profile.js" defer></script>
+  </body>
+</html>
