@@ -108,8 +108,8 @@ This project demonstrates how to implement a fully functional client-server syst
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
-cd <project-folder>
+git clone https://github.com/suatalikoch/client-server.git
+cd client-server
 ```
 
 2. Configure the database connection in backend/database.js.
