@@ -116,7 +116,6 @@ cd client-server
 3. Start the backend server:
 
 ```bash
-# Example for Node.js
 npm start
 ```
 
@@ -124,7 +123,6 @@ npm start
 5. Run unit tests:
 
 ```bash
-# Example for Node.js using npm
 npm test
 ```
 
