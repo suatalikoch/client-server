@@ -117,12 +117,6 @@ cd client-server
 
 ```bash
 # Example for Node.js
-npm run dev
-```
-
-or
-
-```bash
 npm start
 ```
 
