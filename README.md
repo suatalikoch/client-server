@@ -108,19 +108,12 @@ This project demonstrates how to implement a fully functional client-server syst
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
-cd <project-folder>
+git clone https://github.com/suatalikoch/client-server.git
+cd client-server
 ```
 
 2. Configure the database connection in backend/database.js.
 3. Start the backend server:
-
-```bash
-# Example for Node.js
-npm run dev
-```
-
-or
 
 ```bash
 npm start
@@ -130,7 +123,6 @@ npm start
 5. Run unit tests:
 
 ```bash
-# Example for Node.js using npm
 npm test
 ```
 
